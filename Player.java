@@ -33,4 +33,8 @@ public class Player {
     public void setPosY(int new_y){
         this.posY = new_y;
     }
+
+    public void spawnMeInWorld(char initial){
+        
+    }
 }
