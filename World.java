@@ -4,12 +4,13 @@ import java.util.List;
 public class World {
 
     private int worldSize;
+    private Cell[][] worldMap;
 
     public World(int worldSize){
         this.worldSize = worldSize;
+        this.worldMap = new Cell[worldSize][worldSize];
+        layWorld(worldSize);
     }
-
-    int[][] worldMap;
 
     public int getWorldSize(){
         return this.worldSize;
