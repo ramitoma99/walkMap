@@ -34,7 +34,4 @@ public class Player {
         this.posY = new_y;
     }
 
-    public void spawnMeInWorld(char initial){
-        
-    }
 }

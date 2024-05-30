@@ -30,4 +30,10 @@ public class World {
         }
     }
 
+    public void setCell(char init, int x, int y) {
+        worldMap[x][y].setPosX(x);
+        worldMap[x][y].setPosY(y);
+        worldMap[x][y].setCellContent(init);
+    }
+
 }
