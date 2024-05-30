@@ -4,6 +4,12 @@ public class Player {
     private int posX;
     private int posY;
 
+    public Player(char initial, int posX, int posY){
+        this.initial = initial;
+        this.posX = posX;
+        this.posY = posY;
+    }
+
     public char getInitial(){
         return this.initial;
     }

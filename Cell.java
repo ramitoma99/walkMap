@@ -3,6 +3,7 @@ public class Cell {
     private char cellContent;
     private int posX;
     private int posY;
+    private int sharedByPlayers = 0;
 
     public Cell(char content, int x, int y){
         this.cellContent = content;
@@ -32,6 +33,14 @@ public class Cell {
 
     public void setPosY(int new_y){
         this.posY = new_y;
+    }
+
+    public int getSharedByPlayers(){
+        return this.sharedByPlayers;
+    }
+
+    public void setSharedByPlayers(int new_sharedByPlayers){
+        this.sharedByPlayers = new_sharedByPlayers;
     }
 
 }
