@@ -16,7 +16,7 @@ public class World {
     private void layWorld(int worldSize){
         for (int x = 0; x < worldSize; x++){
             for (int y = 0; y < worldSize; y++){
-                worldMap[x][y] = new Cell('.', x, y);
+                worldMap[y][x] = new Cell('.', x, y);
             }
         }
     }
@@ -24,7 +24,7 @@ public class World {
     public void displayWorld(){
         for (int x = 0; x < worldSize; x++){
             for (int y = 0; y < worldSize; y++){
-                System.out.print(worldMap[x][y].getCellContent() + "\t");
+                System.out.print(worldMap[y][x].getCellContent() + "\t");
             }
             System.out.println();
         }
