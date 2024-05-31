@@ -13,6 +13,7 @@ public class GameHub {
 
         int size = scanner.nextInt();
 
+        #Empties input buffer after nextInt
         scanner.nextLine();
 
         World mainWorld = new World(size);
