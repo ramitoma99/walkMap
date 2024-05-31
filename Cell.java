@@ -1,8 +1,10 @@
 public class Cell {
 
+    #What the Cell will display
     private char cellContent;
     private int posX;
     private int posY;
+    #Number of player standing on this cell
     private int sharedByPlayers = 0;
 
     public Cell(char content, int x, int y){
@@ -39,8 +41,24 @@ public class Cell {
         return this.sharedByPlayers;
     }
 
+    #Assigns a number of standing players in the cell
     public void setSharedByPlayers(int new_sharedByPlayers){
         this.sharedByPlayers = new_sharedByPlayers;
+    }
+
+    #Increases standing player count by 1
+    public void increaseSharedByPlayers(){
+
+    this.sharedByPlayers += 1
+
+    }
+
+
+    #Decreases standing player count by 1
+    public void decreaseSharedByPlayers(){
+
+    this.sharedByPlayers -= 1
+
     }
 
 }
